@@ -1,0 +1,208 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "family1";
+    src: url(font/CircularSp-Bold-602e7aefc706aa36c6ec1324b9bbc461.woff2);
+}
+@font-face {
+    font-family: "family2";
+    src: url(font/CircularSp-Book-a00e99ef9996a3a157fb6b746856d04f.woff2);
+}
+@font-face {
+    font-family: "family3";
+    src: url(font/CircularSpTitle-Black-4588c99025b967475c31695b0743dd1a.woff2);
+}
+@font-face {
+    font-family: "family4";
+    src: url(font/CircularSpTitle-Bold-b2586b06a2e1522e9d879d84c2792a58.woff2);
+}
+
+
+.navigation{
+    top: 0;
+    background: black;
+    position: fixed;
+    padding: 16px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    height: 56px;
+}
+.spotifylogo1{
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+.spotifylogo2{
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+.afterlogo{
+    display: flex;
+    align-items: center;
+}
+.headapp{
+    color: rgb(0, 0, 0);
+    font-family: "family4";
+    background: white;
+    width: 93.42px;
+    height: 32px;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-right: 16px;
+    letter-spacing:  0.5px;
+}
+.headmenu{
+    margin-top: 5px;
+}
+.headsearch{
+    margin-right: 16px;
+    margin-top: 5px;
+}
+.mainbody{
+    margin-top: 56px;
+    background: rgb(15, 15, 15);
+    color: rgb(255, 255, 255);
+    font-family: "family4";
+    padding-top: 7px;
+}
+#cardheading1{
+    font-size: 20px;
+    margin-left: 16px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.artists{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    overflow-x: scroll;
+    margin-top: -4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.artists-elem{
+    height: 220px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.artists-elem img{
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.artists-elem p{
+    margin: 0;
+    margin-top: 4px;
+    font-family: "family2";
+}
+.card-albums{
+    margin-top: -15px;
+}
+.albums{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    overflow-x: scroll;
+    margin-top: -4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+#cardheading2{
+    font-size: 20px;
+    margin-left: 16px;
+}
+.albums-elem{
+    padding: 8px;
+    box-sizing: border-box;
+}
+.albums-elem img{
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.albums-elem p{
+    margin: 0;
+    margin-top: 4px;
+    font-family: "family2";
+}
+.card-radio{
+    margin-top: 24px;
+}
+#cardheading3{
+    font-size: 20px;
+    margin-left: 16px;
+}
+.radio{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    overflow-x: scroll;
+    margin-top: -5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.radio-elem{
+    padding: 8px;
+    box-sizing: border-box;
+}
+.radio-elem img{
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.radio-elem p{
+    margin: 0;
+    margin-top: 4px;
+    font-family: "family2";
+}
+.card-charts{
+    margin-top: 24px;
+}
+#cardheading4{
+    font-size: 20px;
+    margin-left: 16px;
+}
+.charts{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    overflow-x: scroll;
+    margin-top: -5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.charts-elem{
+    padding: 8px;
+    box-sizing: border-box;
+}
+.charts-elem img{
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.charts-elem p{
+    margin: 0;
+    margin-top: 4px;
+    font-family: "family2";
+}
+@media (max-width:369px){
+    .spotifylogo2{
+        display: none;
+    }
+}
+@media(min-width:370px){
+    .spotifylogo1{
+        display: none;
+    }
+}
