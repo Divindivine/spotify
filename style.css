@@ -175,7 +175,7 @@ body{
 }
 .charts{
     display: grid;
-    grid-template-columns: repeat(20,1fr);
+    grid-template-columns: repeat(6,1fr);
     overflow-x: scroll;
     margin-top: -5px;
     padding-left: 8px;
@@ -196,6 +196,303 @@ body{
     margin-top: 4px;
     font-family: "family2";
 }
+.card-zzz{
+    margin-top: 24px;
+}
+#cardheading5{
+    font-size: 20px;
+    margin-left: 16px;
+}
+.zzz{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    overflow-x: scroll;
+    margin-top: -4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.zzz-elem{
+    padding: 8px;
+    box-sizing: border-box;
+}
+.zzz-elem img{
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.zzz-elem p{
+    margin: 0;
+    margin-top: 4px;
+    font-family: "family2";
+}
+.card-trending{
+    margin-top: 24px;
+}
+#cardheading6{
+    font-size: 20px;
+    margin-left: 16px;
+}
+.trending{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    overflow-x: scroll;
+    margin-top: -5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.trending-elem{
+    padding: 8px;
+    box-sizing: border-box;
+}
+.trending-elem img{
+    width: 152px;
+    height: 152px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.trending-elem p{
+    margin: 0;
+    margin-top: 4px;
+    font-family: "family2";
+}
+.foot{
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    background: rgb(15,15,15);
+    color: white;
+}
+.footlist{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    margin-top: 28px;
+    padding-bottom: 30px;
+}
+.footlist a{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "family3";
+    letter-spacing: 0.5px;
+}
+.footlist p{
+    font-size: 16px;
+    font-weight: 100;
+    font-family: "family2";
+    color: rgb(173, 171, 171);
+    margin: 0;
+    margin-top: 8px;
+}
+.footlistfirstpart{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+.footlistsecondpart{
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+.socialmedias{
+    display: flex;
+    gap: 16px;
+}
+.socialmedias div{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(41, 41, 41);
+    display: grid;
+    place-content:center;
+}
+hr{
+    opacity: 0.1;
+}
+.endfooter{
+    padding-top: 29px;
+    font-family: "family2";
+    font-size: 14px;
+    color: rgb(173, 171, 171);
+}
+.endfooterpart1{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 10px;
+
+}
+.endfooter p{
+    margin: 0;
+}
+.endfooterpart2{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.english{
+    height: 32px;
+    width: 92.5px;
+    border: 1px solid rgb(116, 115, 115);
+    box-sizing: border-box;
+    padding-left: 10px;
+    align-content: center;
+    border-radius: 20px;
+    color: rgb(228, 223, 223);
+    font-family: "family3";
+}
+.english img{
+    vertical-align: middle;
+    margin-bottom: 1px;
+    margin-right: 4px;
+    margin-left: 2px;
+}
+.desktop{
+    background: black;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.indesktop{
+    gap: 8px;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+.maingrid{
+    display: grid;
+    background: black;
+    gap: 8px;
+    grid-template-areas: "left-sidebar main-view right-sidebar"
+    "now-playing-bar now-playing-bar now-playing-bar";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+    min-height: 100%;
+    padding: 8px;
+    position: relative;
+    width: 100%;
+}
+.leftsidebar{
+    display: flex;
+    grid-area: left-sidebar;
+    position: relative;
+    background: black;
+    flex-direction: column;
+    min-height: 0;
+    width: 420px;
+    z-index: 4;
+}
+.leftsidebarflex{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 8px;
+    min-height: 0;
+}
+.lefttop{
+    background: #121212;
+    border-radius: 8px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.lefttoppart1{
+    display: flex;
+}
+#logo{
+    height: 24px;
+    margin-top: 20px;
+    padding: 0 24px;
+    text-decoration: none;  
+}
+#logoimg{
+    width: 78px;
+    height: 24px;
+}
+.lefttoppart2{
+    padding: 8px 12px;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+}
+.spotifyhome{
+    padding: 4px 12px;
+    box-sizing: border-box;
+    list-style: none;
+}
+.spotifyhomein{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 40px;
+    text-decoration: none;
+    align-items: center;
+}
+#deskhomeicon{
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+}
+#homedef{
+    font-weight: 700;
+    font-family: "family1";
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+.spotifysearch{
+    padding: 4px 12px;
+    box-sizing: border-box;
+    list-style: none;
+}
+.spotifysearchin{
+    display: flex;
+    gap: 20px;
+    height: 40px;
+    text-decoration: none;
+    align-items: center;
+    color: #b3b3b3;
+}
+.leftbottom{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    width: 100%;
+    min-height: 0;
+    background: #121212;
+    margin: 0;
+    padding: 0;
+}
+.leftbottompart1{
+    display: flex;
+    padding-top: 0;
+    width: 100%;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.library{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 16px;
+    margin: 0;
+    box-sizing: border-box;
+}
 @media (max-width:369px){
     .spotifylogo2{
         display: none;
@@ -203,6 +500,69 @@ body{
 }
 @media(min-width:370px){
     .spotifylogo1{
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .footlistfirstpart{
+        flex-direction: row;
+        
+    }
+    .communities{
+        margin-left: 23.2%;
+    }
+    .footlistsecondpart{
+        flex-direction: row;
+        
+    }
+    .spotifyplans{
+        margin-left:21.2%;
+    }
+}
+@media (min-width: 992px){
+    .communities{
+        margin-left: 0;
+    }
+    .spotifyplans{
+        margin-left: 0;
+    }
+    .footlist{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .footlistfirstpart{
+        justify-content: space-between;
+
+    }
+    .footlistsecondpart{
+        justify-content: space-between;
+    }
+    .english{
+        display: none;
+    }
+    .endfooter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+@media (max-width: 1023px){
+    .desktop{
+        display: none;
+    }
+}
+@media (min-width: 1024px){
+    .navigation{
+        display: none;
+    }
+    .mainbody{
+        display: none;
+    }
+    .foot{
         display: none;
     }
 }
