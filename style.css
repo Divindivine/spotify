@@ -493,6 +493,743 @@ hr{
     margin: 0;
     box-sizing: border-box;
 }
+.libraryin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+}
+.yourlibrary{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.yourlibrarybutton{
+    display: flex;
+    height: 40px;
+    justify-content: flex-start;
+    min-block-size: 40px;
+    flex-shrink: 0;
+    padding: 4px 8px;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: transparent;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-family: "family1";
+    border: 0px;
+    color: #b3b3b3;
+    font-size: 1rem;
+    align-items: center;
+}
+.librarysymbol{
+    display: flex;
+    margin-inline-end: 12px;
+    box-sizing: border-box;
+
+}
+.librarysymbol img{
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+
+}
+.plusbuttonspan{
+    display: block;
+    margin-right: 8px;
+    margin-top: 4px;
+}
+.plusbutton{
+    max-width: 100%;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border: 0px;
+    text-decoration: none;
+    padding: 0;
+    position: relative;
+    background-color: transparent;
+}
+.plus{
+    display: flex; 
+}
+.plus img{
+    height: 16px;
+    width: 16px;
+    box-sizing: border-box;
+
+}
+.leftbottompart1final{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 16px;
+}
+.leftbottompart1second{
+    height: 100%;
+    overscroll-behavior-y: contain;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    -webkit-box-align: stretch;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-wrap: nowrap;
+    scroll-behavior: auto;
+    position: relative;
+    scrollbar-width: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.sizeobserver{
+    box-sizing: inherit;
+    contain: strict;
+    display: flex;
+    z-index: -1;
+    border: inherit;
+    bottom: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    left: 0;
+    padding: inherit;
+    margin: -133px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    visibility: hidden;
+    scroll-behavior: auto;
+    direction: inherit;
+
+}
+.sizeobserver::before{
+    content: "";
+    flex: none;
+    height: 10px;
+    padding: 10px;
+    width: 10px;
+    box-sizing: inherit;
+    visibility: hidden;
+    direction: inherit;
+}
+.sizeobserverlistener{
+    box-sizing: border-box;
+    position: relative;
+    -webkit-box-flex: 1;
+    border: inherit;
+    flex: auto;
+    margin: -133px;
+    padding: inherit;
+    left: 0;
+    top: 0;
+    direction: inherit;
+    overflow: hidden;
+    scroll-behavior: auto;
+    visibility: hidden;
+}
+.sizeobserverlistener::before{
+    border: inherit;
+    box-sizing: content-box;
+    display: block;
+    padding: inherit;
+    position: relative;
+    -webkit-box-flex: 1;
+    flex: auto;
+    content: "";
+    height: 100%;
+    width: 100%;
+    direction: inherit;
+    visibility: hidden;
+}
+.leftbottompart1secondin{
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    top: 0px;
+    right: auto;
+    left: 0px;
+    width: calc(100% + 0px);
+    padding: 0px;
+    box-sizing: inherit;
+    position: relative;
+    -webkit-box-flex: 1;
+    border: none;
+    flex: auto;
+    min-height: 66px;
+    height: 15vh;
+    margin: 0;
+    min-width: 0;
+    z-index: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    scrollbar-width: none;
+    
+}
+.leftbottompart1secondin-1{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 100%;
+    padding: 0 8px 8px;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.leftbottompart1secondin-1section1{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    background: #242424;
+    border-radius: 8px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    border: 0;
+    gap: 20px;
+}
+.leftbottompart1secondin-1section1part1{
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.createfirstplaylist{
+    color: #fff;
+    font-weight: 700;
+    font-family: "family1";
+    font-size: 1rem;
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.itseasy{
+    color: #fff;
+    font-weight: 400;
+    font-family: "family2";
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.createplaylistpart2{
+    align-self: flex-start;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 126.66px;
+    height: 32px;
+}
+.createplaylistbutton{
+    font-weight: 700;
+    font-family: "family1";
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    padding: 0px;
+    min-inline-size: 0px;
+    vertical-align: middle;
+    color: #b3b3b3;
+    border-radius: 9999px;
+    width: 126.66px;
+    height: 32px;
+    margin: 0;
+}
+.createplaylistbuttondef{
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    font-size: inherit;
+    min-block-size: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 0;
+    margin: 0;
+    border-radius: 9999px;
+    text-align: center;
+    width: 126.66px;
+    height: 32px;
+    
+}
+.leftbottompart1secondin-1section2{
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: flex-start;
+    background: #242424;
+    border-radius: 8px;
+    gap: 20px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    border: 0;
+    box-sizing: border-box;
+
+}
+.section2-part1{
+    gap: 8px;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.letsfindsome{
+    font-weight: 700;
+    font-family: "family1";
+    font-size: 1rem;
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.wellkeepyou{
+    font-weight: 400;
+    font-family: "family2";
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.section2-part1-final{
+    align-self: flex-start;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.browsepodcasts{
+    font-weight: 700;
+    font-family: "fammily1";
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 9999px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 0px;
+    min-inline-size: 0px;
+    margin: 0;
+}
+.showbrowse{
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    border-radius: 9999px;
+    font-size: inherit;
+    min-block-size: 32px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-block-start: 4px;
+    padding-block-end: 4px;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    border: 0;
+    margin: 0;
+    font-weight: 700;
+    font-family: "family1";
+}
+.leftbottompart1secondinsecond{
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 12px;
+    padding: 0;
+    bottom: 0;
+    contain: size layout style;
+    position: absolute;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.scrollbartrack{
+    container-type: size;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 0;
+    position: relative;
+    margin: 0;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+.scrollbartrack::before{
+    bottom: 0;
+    top: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+.scrollbarhandle{
+    height: 100%;
+    min-width: 30px;
+    left: auto;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    background: hsla(0,0%,100%,.3);
+    border: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+.scrollbarhandle::before{
+    bottom: 0;
+    top: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+.scrollbar{
+    bottom: 0;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+    width: 12px;
+    right: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+}
+.scrollbartrack1{
+    container-type: size;
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 0;
+    position: relative;
+    margin: 0;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+.scrollbartrack1::before{
+    bottom: 0;
+    top: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+.scrollbarhandle1{
+    height: 100%;
+    min-width: 30px;
+    left: auto;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    background: hsla(0,0%,100%,.3);
+    border: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    visibility: hidden;   
+}
+.scrollbarhandle1::before{
+    bottom: 0;
+    top: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+.leftbottompart2{
+    overflow: hidden;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline; 
+}
+.legallinks{
+    margin: 32px 0px;
+    padding: 0 24px;
+    text-align: start;
+    border: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+.legallinkspart1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    
+}
+.linkitem{
+    margin: 0;
+    margin-right: 16px;
+    border: 0;
+    padding: 0;
+    text-align: start;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+.linkstyle{
+    margin: 0;
+    margin-bottom: 8px;
+    text-decoration: none;
+    line-height: 15px;
+    border: none;
+    padding: 0px;
+    color: #a7a7a7;
+    align-items: center;
+    display: inline-flex;
+    -webkit-box-align: center;
+    box-sizing: border-box;
+    text-align: start;
+}
+.link{
+    margin-block: 0px;
+    box-sizing: border-box;
+    font-size: 0.6875rem;
+    font-weight: 400;
+    font-family: "family2";
+    color: inherit;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+}
+.finallink{
+    color: #b3b3b3;
+    padding-inline-end: 16px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: start;
+}
+.finallinkspan{
+    border: 0;
+    padding: 0;
+    font-family: "family2";
+    font-size: 0.75rem;
+    font-weight: 400;
+    height: 17px;
+    letter-spacing: 0.px;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    text-align: start;
+}
+.languageselect{
+    margin: 0;
+    margin-bottom: 32px;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+.languageselectbutton{
+    font-weight: 700;
+    font-family: "family1";
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 999px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    padding-block-start: 3px;
+    padding-block-end: 3px;
+    padding-inline-start: 32px;
+    padding-inline-end: 15px;
+    border: 1px solid #727272;
+    color: #fff;
+    min-block-size: 32px;
+    min-inline-size: 0px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+.languagesymbol{
+    display: flex;
+    position: absolute;
+    left: 12px;
+}
+.resizebar{
+    inset-inline-end: -8px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    height: 100%;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    width: 8px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hidden-visually{
+    border: 0;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    clip: rect(0 0 0 0);
+    box-sizing: border-box;
+}
+.bottomthing{
+    grid-area: now-playing-bar;
+    width: 100%;
+    z-index: 6;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+.bottomthingin{
+    display: flex;
+    min-width: 620px;
+    flex-direction: column;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
+}
+.signupbar{
+    padding: 11px 24px 7px 15px;
+    background-image: linear-gradient(90deg,#af2896,#509bf5);
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    border: 0;
+    margin: 0;
+}
+.spotifydef{
+    margin: 0 0 4px;
+    color: #fff;
+    border: 0;
+    padding: 0;
+}
+#spotifypreview{
+    font-weight: 700;
+    font-family: "family1";
+    font-size: 0.875rem;
+    margin: 0;
+    padding: 0;
+}
+#spotifyspeciality{
+    font-weight: 400;
+    font-family: "family2";
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+.buttonprimary{
+    font-weight: 700;
+    font-family: "family1";
+    font-size: 1rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 9999px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0px;
+    min-inline-size: 0px;
+    align-self: center;
+    margin: 0;
+}
+.buttoninner{
+    white-space: nowrap;
+    -webkit-box-flex: 1;
+    box-sizing: border-box;
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    border-radius: 9999px;
+    font-size: inherit;
+    font-family: inherit;
+    min-block-size: 48px;
+    align-items: center;
+    justify-content: center;
+    padding-block-start: 8px;
+    padding-block-end: 8px;
+    padding-inline-start: 32px;
+    padding-inline-end: 32px;
+
+}
 @media (max-width:369px){
     .spotifylogo2{
         display: none;
@@ -566,3 +1303,5 @@ hr{
         display: none;
     }
 }
+
+
