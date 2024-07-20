@@ -1,6 +1,8 @@
-body{
+body,html{
     padding: 0;
     margin: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 @font-face {
@@ -481,7 +483,7 @@ hr{
     width: 100%;
     flex-direction: column;
     flex: 1;
-    min-height: 0;
+    min-height: 137px;
     overflow-x: hidden;
     box-sizing: border-box;
 }
@@ -661,13 +663,12 @@ hr{
     border: none;
     flex: auto;
     min-height: 66px;
-    height: 15vh;
+
     margin: 0;
     min-width: 0;
     z-index: 0;
     overflow-y: scroll;
     overflow-x: hidden;
-    scrollbar-width: none;
     scrollbar-width: none;
     
 }
@@ -1158,6 +1159,8 @@ hr{
     height: auto;
     box-sizing: border-box;
     margin: 0;
+    margin-bottom: 16px;
+    margin-right: 55px;
 }
 .signupbar{
     padding: 11px 24px 7px 15px;
@@ -1230,6 +1233,539 @@ hr{
     padding-inline-end: 32px;
 
 }
+.spotifymain{
+    position: relative;
+    background: black;
+}
+.spotify-main-header{
+    position: absolute;
+    display: flex;
+    height: 64px;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #121212;
+    justify-content: space-between;
+    align-items: center;
+}
+.spotify-arrows{
+    display: flex;
+    gap: 24px;
+    margin-left: 24px;
+    align-items: center;
+}
+.spotify-arrows img{
+    opacity: 0.6;
+    vertical-align: middle;
+}
+.headbuttons{
+    display: flex;
+    gap: 32px;
+    margin-right: 32px;
+    align-items: center;
+}
+.headsign{
+    font-size: 16px;
+    color: #a7a7a7;
+    font-weight: 700;
+    font-family: "family1";
+}
+.headlog{
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    font-weight: 700;
+    font-family: "family1";
+    width: 109.38px;
+    height: 48px;
+    border-radius: 9999px;
+    display: grid;
+    place-content: center;
+}
+
+/* }
+.spotify-main-body{
+    position: relative;
+    -webkit-box-flex: 1;
+    flex: 1;
+    min-height: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainbodyin{
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    scroll-behavior: auto;
+    position: relative;
+    height: 100%;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mainscroll{
+   margin-right: 0px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   top: 0px;
+   right: auto;
+   left: 0px;
+   width: calc(100% + 0px);
+   padding: 0px; 
+   box-sizing: border-box;
+   position: relative;
+   -webkit-box-flex: 1;
+   border: none;
+   flex: auto;
+   height: auto;
+   margin: 0;
+   min-width: 0;
+   z-index: 0;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+.firstspacer{
+    height: 64px;
+    position: sticky;
+    top: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-view-container{
+    min-height: calc(-673px + 100vh);
+    scroll-behavior: smooth;
+    padding-bottom: 32px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.musicforeveryone{
+    width: 100%;
+    box-sizing: border-box;
+}
+.background{
+    background-color: rgb(83,83,83);
+    background-image: linear-gradient(rgba(0,0,0,.6) 0, #121212 100%);
+    height: 332px;
+    margin-top: -64px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.homepage{
+    container-name: homepage;
+    container-type: inline-size;
+    padding-top: 8px;
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contentspacing{
+    display: flex;
+    gap: 24px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1955px;
+    padding: 0 16px;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.secgrid{
+    display: flex;
+    max-width: 100%;
+    min-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    position: relative;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    contain-intrinsic-size: auto 260px;
+    container-type: inline-size;
+    min-height: 260px;799
+653
+146
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.secgrid-first{
+    padding: 0px;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+.secgrid-firstin{
+    height: 60px;
+    display: grid;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 6px;
+    min-block-size: 56px;
+    z-index: 0;
+    color: #fff;
+    padding-block: 8px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.areaheadarea{
+    gap: 12px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.area-interactivearea{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: flex-start;
+}
+#encoretext{
+    font-family: "family1";
+    font-weight: 700;
+    font-size: 1rem;
+    box-sizing: border-box;
+    color: white;
+    border:0;
+    padding: 0;
+    margin: 0;
+}
+.listrowtitle{
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.area-interactivearea2{
+    flex-shrink: 0;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+#encoretextsmall{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    margin-inline-end: 8px;
+    background: transparent;
+    color: #b3b3b3;
+    white-space: nowrap;
+    margin-block-start: 2px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    font-family: 16px;
+}
+.see-all-link{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "family4";
+}
+.area-interactivearea2{
+    flex-shrink: 0;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+#encoretextsmall{
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    margin-inline-end: 8px;
+    background: transparent;
+    color: #b3b3b3;
+    white-space: nowrap;
+    margin-block-start: 2px;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-decoration: none;
+} 
+.smallbold{
+    font-weight: 700;
+    font-family: "family4";
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+.secgrid-second{
+    margin-inline: -12px;
+    grid-auto-rows: 0;
+    content-visibility: auto;
+    grid-template-rows: repeat(1,minmax(0,1fr));
+    display: grid;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.secgrid-second-elem{
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 8px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 6px;
+    min-block-size: 48px;
+    z-index: 0;
+    color: #fff;
+    padding-block: 12px;
+    padding-inline: 12px;
+}
+.secgrid-second-elem1{
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+.artistprofile{
+    background-color: #682828;
+}
+.secgrid-second-elem2{
+    position: relative;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.artistprofilein{
+    border-radius: 50%;
+    background-color: #682828;
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+#profilepicpic{
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.secgrid-second-elem3{
+    column-gap: 12px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+}
+.secgrid-second-elem3in{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex-basis: 100%;
+    align-items: flex-start;
+}
+.inin{
+    position: relative;
+    z-index: 1;
+    margin-inline-start: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.ininin{
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-block: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "family1";
+}
+.inininspan{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.inin1{
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    font-weight: 400;
+    font-family: "family1";
+    color: #a7a7a7;
+}
+.ininin1{
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden; 
+}
+.inininin1{
+    color: #a7a7a7;
+    font-family: "family1";
+    font-weight: 400;
+    font-size: 0.875rem;
+
+} */
+.spotify-main-body{
+    container-name: homepage;
+    container-type: inline-size;
+    padding-top: 8px;
+    margin-top: 64px;
+    background: transparent;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+.spotify-main-body-inner{
+    display: flex;
+    gap: 24px;
+    flex-flow: row-wrap;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1955px;
+    padding: 0px 16px;
+    z-index: 5;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+.desksection{
+    display: flex;
+    max-width: 100%;
+    min-width: 100%;
+    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    position: relative;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    min-height: 260px;
+    contain-intrinsic-size: auto 260px;
+    container-type: inline-size;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading-sectionin{
+    height: 60px;
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto 1fr auto;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 6px;
+    min-block-size: 56px;
+    color: black;
+    padding-block: 8px;
+}
+.heading-sectioninin{
+    grid-column-end: -1;
+    gap: 12px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    display: flex;
+}
+.heading-1{
+   display: flex;
+   flex-direction: column;
+   gap: 2px;
+   align-items: flex-start; 
+}
+#bold{
+    font-weight: 700;
+    font-size: 1rem;
+    box-sizing: border-box;
+    color: white;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-family: "family4";
+}
+.heading-2{
+    display: flex;
+    flex-shrink: 0;
+    align-self: stretch;
+    align-items: center;
+    -webkit-box-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#heading-2tag{
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    margin-inline-end: 8px;
+    margin-block-start: 3px;
+    background-color: transparent;
+    color: #b3b3b3;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+}
+#semi-bold{
+    font-weight: 700;
+    font-family: "family1";
+    font-size: 0.875rem;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-right: 16px;
+}
+.bodygrid{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: repeat(1, minmax(0,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    margin-inline: -12px;
+    grid-auto-rows: 0;
+    content-visibility: auto;
+
+}
+
 @media (max-width:369px){
     .spotifylogo2{
         display: none;
@@ -1291,6 +1827,9 @@ hr{
     .desktop{
         display: none;
     }
+    html,body{
+        overflow: scroll;
+    }
 }
 @media (min-width: 1024px){
     .navigation{
@@ -1302,6 +1841,10 @@ hr{
     .foot{
         display: none;
     }
+    body,html{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        overflow: hidden; 
+    }
 }
-
-
