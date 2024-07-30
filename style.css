@@ -6,22 +6,25 @@ body,html{
 }
 
 @font-face {
-    font-family: "family1";
-    src: url(font/CircularSp-Bold-602e7aefc706aa36c6ec1324b9bbc461.woff2);
+    font-family: family1;
+    src: url(font/SpotifyMixUI-Bold-4264b799009b1db5c491778b1bc8e5b7.woff2);
 }
 @font-face {
-    font-family: "family2";
-    src: url(font/CircularSp-Book-a00e99ef9996a3a157fb6b746856d04f.woff2);
+    font-family: family2;
+    src: url(font/SpotifyMixUI-Regular-cc3b1de388efa4cbca6c75cebc24585e.woff2);
 }
 @font-face {
-    font-family: "family3";
-    src: url(font/CircularSpTitle-Black-4588c99025b967475c31695b0743dd1a.woff2);
+    font-family: family3;
+    src: url(font/SpotifyMixUITitle-Bold-37290f1de77f297fcc26d71e9afcf43f.woff2);
 }
 @font-face {
-    font-family: "family4";
-    src: url(font/CircularSpTitle-Bold-b2586b06a2e1522e9d879d84c2792a58.woff2);
+    font-family: family4;
+    src: url(font/SpotifyMixUITitle-Extrabold-ba6c73cd7f82c81e49cf2204017803ed.woff2);
 }
-
+@font-face {
+    font-family: family5;
+    src: url(font/SpotifyMixUITitleVariable-8769ccfde3379b7ebcadd9529b49d0cc.woff2);
+}
 
 .navigation{
     top: 0;
@@ -52,7 +55,8 @@ body,html{
 }
 .headapp{
     color: rgb(0, 0, 0);
-    font-family: "family4";
+    font-family: family1;
+    font-weight: 700;
     background: white;
     width: 93.42px;
     height: 32px;
@@ -61,7 +65,7 @@ body,html{
     border-radius: 20px;
     font-size: 13px;
     margin-right: 16px;
-    letter-spacing:  0.5px;
+
 }
 .headmenu{
     margin-top: 5px;
@@ -79,6 +83,8 @@ body,html{
 }
 #cardheading1{
     font-size: 20px;
+    font-weight: 700;
+    font-family: family5;
     margin-left: 16px;
 }
 ::-webkit-scrollbar{
@@ -121,6 +127,8 @@ body,html{
 }
 #cardheading2{
     font-size: 20px;
+    font-weight: 700;
+    font-family: family5;
     margin-left: 16px;
 }
 .albums-elem{
@@ -143,6 +151,8 @@ body,html{
 }
 #cardheading3{
     font-size: 20px;
+    font-weight: 700;
+    font-family: family5;
     margin-left: 16px;
 }
 .radio{
@@ -173,6 +183,8 @@ body,html{
 }
 #cardheading4{
     font-size: 20px;
+    font-weight: 700;
+    font-family: family5;
     margin-left: 16px;
 }
 .charts{
@@ -203,6 +215,8 @@ body,html{
 }
 #cardheading5{
     font-size: 20px;
+    font-weight: 700;
+    font-family: family5;
     margin-left: 16px;
 }
 .zzz{
@@ -233,6 +247,8 @@ body,html{
 }
 #cardheading6{
     font-size: 20px;
+    font-weight: 700;
+    font-family: family5;
     margin-left: 16px;
 }
 .trending{
@@ -271,15 +287,14 @@ body,html{
 .footlist{
     display: flex;
     flex-direction: column;
-    gap: 42px;
-    margin-top: 28px;
-    padding-bottom: 30px;
+    gap: 40px;
+    margin-top: 26px;
+    padding-bottom: 32px;
 }
 .footlist a{
     font-size: 16px;
     font-weight: 700;
-    font-family: "family3";
-    letter-spacing: 0.5px;
+    font-family: family1;
 }
 .footlist p{
     font-size: 16px;
@@ -292,18 +307,19 @@ body,html{
 .footlistfirstpart{
     display: flex;
     flex-direction: column;
-    gap: 42px;
+    gap: 40px;
 }
 .footlistsecondpart{
     display: flex;
     flex-direction: column;
-    gap: 42px;
+    gap: 40px;
 }
 .socialmedias{
     display: flex;
     gap: 16px;
 }
 .socialmedias div{
+    margin-top: 0px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -342,14 +358,17 @@ hr{
     border: 1px solid rgb(116, 115, 115);
     box-sizing: border-box;
     padding-left: 10px;
+    padding-top: 2px;
     align-content: center;
     border-radius: 20px;
-    color: rgb(228, 223, 223);
-    font-family: "family3";
+    color: rgb(255,255,255);
+    font-family: family1;
+    font-size: 0.8125rem;
+    font-weight: 700;
 }
 .english img{
     vertical-align: middle;
-    margin-bottom: 1px;
+    margin-bottom: 3px;
     margin-right: 4px;
     margin-left: 2px;
 }
@@ -418,7 +437,7 @@ hr{
     text-decoration: none;  
 }
 #logoimg{
-    width: 78px;
+    width: 88px;
     height: 24px;
 }
 .lefttoppart2{
@@ -1294,6 +1313,7 @@ hr{
     display: block;
     height: calc(100vh - 150px);
 }
+/*
 .spotify-main-body-inner{
     display: flex;
     gap: 24px;
@@ -1635,8 +1655,9 @@ hr{
     font-size: 0.875rem;
     font-weight: 400;
     font-family: "family2";
-}
-@media (max-width:369px){
+} */
+
+@media(max-width:369px){
     .spotifylogo2{
         display: none;
     }
@@ -1694,23 +1715,18 @@ hr{
     }
 }
 @media (max-width: 1023px){
-    .desktop{
-        display: none;
-    }
     html,body{
         overflow: scroll;
     }
+    .leftsidebar{
+        display: none;
+    }
+    .bottomthing{
+        display: none;
+    }
 }
 @media (min-width: 1024px){
-    .navigation{
-        display: none;
-    }
-    .mainbody{
-        display: none;
-    }
-    .foot{
-        display: none;
-    }
+
     body,html{
         padding: 0;
         margin: 0;
