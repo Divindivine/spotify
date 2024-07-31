@@ -278,7 +278,7 @@ body,html{
     width: 100%;
     padding-left: 16px;
     padding-right: 16px;
-    padding-top: 30px;
+    padding-top: 14px;
     padding-bottom: 40px;
     box-sizing: border-box;
     background: rgb(15,15,15);
@@ -373,35 +373,12 @@ hr{
     margin-left: 2px;
 }
 .desktop{
-    background: black;
     width: 100%;
-    height: 100%;
-    z-index: 0;
-    margin: 0;
-    padding: 0;
-    position: relative;
 }
 .indesktop{
-    gap: 8px;
-    height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    box-sizing: border-box;
 }
 .maingrid{
-    display: grid;
-    background: black;
-    gap: 8px;
-    grid-template-areas: "left-sidebar main-view right-sidebar"
-    "now-playing-bar now-playing-bar now-playing-bar";
-    grid-template-columns: auto 1fr;
-    grid-template-rows: 1fr auto;
-    height: 100%;
-    min-height: 100%;
-    padding: 8px;
-    position: relative;
     width: 100%;
 }
 .leftsidebar{
@@ -1296,23 +1273,13 @@ hr{
     background-color: white;
     font-weight: 700;
     font-family: "family1";
-    width: 109.38px;
+    width: 108.3px;
     height: 48px;
     border-radius: 9999px;
     display: grid;
     place-content: center;
 }
-.spotify-main-body{
-    container-name: homepage;
-    container-type: inline-size;
-    padding-top: 8px;
-    margin-top: 64px;
-    background: transparent;
-    overflow-y: scroll;
-    box-sizing: border-box;
-    display: block;
-    height: calc(100vh - 150px);
-}
+
 /*
 .spotify-main-body-inner{
     display: flex;
@@ -1670,18 +1637,16 @@ hr{
 @media (min-width: 768px){
     .footlistfirstpart{
         flex-direction: row;
+        justify-content: space-between;
+        margin-right: calc(60% - 122.5px);
         
-    }
-    .communities{
-        margin-left: 23.2%;
     }
     .footlistsecondpart{
         flex-direction: row;
-        
+        justify-content: space-between;
+        margin-right: calc(60% - 163.5px);
     }
-    .spotifyplans{
-        margin-left:21.2%;
-    }
+
 }
 @media (min-width: 992px){
     .communities{
@@ -1724,7 +1689,48 @@ hr{
     .bottomthing{
         display: none;
     }
-}
+    .spotify-main-header{
+        display: none;
+    }
+    .desktop{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        margin: 0;
+    }
+    .indesktop{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    } 
+    .maingrid{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+    }
+    .spotifymain{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        
+    }
+    .spotify-main-body{
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+
+    }
+    #grid-new-elem a{
+        display: none;
+    }
+}   
 @media (min-width: 1024px){
 
     body,html{
@@ -1733,9 +1739,162 @@ hr{
         height: 100%;
         overflow: hidden; 
     }
+    .desktop{
+        background: black;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    .indesktop{
+        gap: 8px;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        box-sizing: border-box;
+    }
+    .maingrid{
+        display: grid;
+        background: black;
+        gap: 8px;
+        grid-template-areas: "left-sidebar main-view right-sidebar"
+        "now-playing-bar now-playing-bar now-playing-bar";
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 1fr auto;
+        height: 100%;
+        min-height: 100%;
+        padding: 8px;
+        position: relative;
+        width: 100%;
+    }
+    .spotify-main-body{
+        container-name: homepage;
+        container-type: inline-size;
+        padding-top: 8px;
+        margin-top: 64px;
+        background: transparent;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        display: block;
+        height: calc(100vh - 150px);
+    }
+    .navigation{
+        display: none;
+    }
+    .mainbody{
+        margin-top: -57px;
+        padding-top: 22px;
+        background-color: rgb(83, 83, 83);
+        background-image: linear-gradient(rgba(0,0,0,0.6) 0, #121212 100%);
+    }
+    #parent-cards{
+        margin-top: 60px;
+    }
+    #cardheading1, #cardheading2, #cardheading3,
+    #cardheading4, #cardheading5, #cardheading6{
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    #role-grid{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-rows: repeat(1, minmax(0,1fr));
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        margin-inline: 4px;
+        grid-auto-rows: 0;
+        content-visibility: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        gap: 3px;
+    }
+    #roundedpic{
+        border-radius: 50%;
+
+    }
+    #grid-new-elem{
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        position: relative;
+        border-radius: 6px;
+        min-block-size: 48px;
+        z-index: 0;
+        color: black;
+        padding-block: 12px;
+        padding-inline: 12px;
+        gap: 8px;
+        min-width: 160px;
+        max-width: 213px;
+    }
+    #grid-new-elem img{
+        min-inline-size: 152px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        inline-size: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+    }
+    #grid-new-elem p{
+        color: white;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        box-sizing: border-box;
+        font-family: "family2";
+        font-size: 1rem;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+    }
+
+    #grid-new-elem a{
+        color: #a7a7a7;
+        font-size: 0.875rem;
+        font-weight: 400;
+        box-sizing: border-box;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        display: -webkit-box;
+        margin-top: 1px;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-family: "family2";
+        text-decoration: none;
+        margin-top: 0px;
+    }
+    .endfooterpart1{
+        display: nonew;
+    }
+    .footlist{
+        display: flex;
+    }
+    .footlistfirstpart{
+        display: flex;
+    }
+    .footlistsecondpart{
+        display: flex;
+    }
 }
+
 @media (min-width:1172px){
-    #bold{
+    #cardheading1, #cardheading2, #cardheading3,
+    #cardheading4, #cardheading5, #cardheading6{
         font-size: 1.5rem;
     }
 }
@@ -1748,7 +1907,7 @@ hr{
     .spotify-main-body-inner{
         padding: 0px 24px;
     }
-    .bodygrid{
+    #role-grid{
         grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     }
     .spotify-desk-footer-in{
@@ -1767,3 +1926,4 @@ hr{
         display: none;
     }
 }
+
