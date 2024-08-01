@@ -304,6 +304,11 @@ body,html{
     margin: 0;
     margin-top: 8px;
 }
+.footfirstnsec{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
 .footlistfirstpart{
     display: flex;
     flex-direction: column;
@@ -1279,350 +1284,115 @@ hr{
     display: grid;
     place-content: center;
 }
-
-/*
-.spotify-main-body-inner{
+.topwrote{
     display: flex;
-    gap: 24px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    max-width: 1955px;
-    padding: 0px 16px;
-    z-index: 5;
-    overflow-y: auto;
-    box-sizing: border-box;
-}
-.desksection{
-    display: flex;
-    max-width: 100%;
-    min-width: 100%;
-    flex-direction: column;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    position: relative;
-    -webkit-box-flex: 1;
-    flex: 1 1 auto;
-    min-height: 260px;
-    contain-intrinsic-size: auto 260px;
-    container-type: inline-size;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.heading-sectionin{
-    height: 60px;
-    display: grid;
-    gap: 12px;
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto 1fr auto;
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 6px;
-    min-block-size: 56px;
-    color: black;
-    padding-block: 8px;
-}
-.heading-sectioninin{
-    grid-column-end: -1;
-    gap: 12px;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
     justify-content: space-between;
-    display: flex;
-}
-.heading-1{
-   display: flex;
-   flex-direction: column;
-   gap: 2px;
-   align-items: flex-start; 
-}
-#bold{
-    font-weight: 700;
-    font-size: 1rem;
-    box-sizing: border-box;
-    color: white;
-    margin-block-end: 0;
-    margin-block-start: 0;
-    outline: none;
-    margin: 0;
-    padding: 0;
-    font-family: "family4";
-}
-.heading-2{
-    display: flex;
-    flex-shrink: 0;
-    align-self: stretch;
     align-items: center;
-    -webkit-box-align: center;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
-#heading-2tag{
-    position: relative;
-    z-index: 1;
-    text-decoration: none;
-    margin-inline-end: 8px;
-    margin-block-start: 3px;
-    background-color: transparent;
-    color: #b3b3b3;
-    white-space: nowrap;
-    margin: 0;
-    padding: 0;
-}
-#semi-bold{
-    font-weight: 700;
-    font-family: "family1";
-    font-size: 0.875rem;
-    box-sizing: border-box;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-right: 16px;
-}
-.bodygrid{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-rows: repeat(1, minmax(0,1fr));
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    margin-inline: -12px;
-    grid-auto-rows: 0;
-    content-visibility: auto;
-
-}
-.body-grid-elem{
-    margin: 0;
-    height: 100%;
-    width: 100%;
-    display: inline-flex;
-    row-gap: 8px;
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 6px;
-    min-block-size: 48px;
-    z-index: 0;
-    color: black;
-    padding-block: 12px;
-    padding-inline: 12px;
-}
-.body-grid-elemin{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.body-grid-elem-img{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-#round-img img{
-    border-radius: 50%;
-}
-.body-grid-elem-img img{
-    min-inline-size: 152px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    inline-size: 100%;
-    margin: 0;
-    padding: 0;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-.define-tag{
-    margin-top: 3px;
-    -webkit-box-align: center;
-    align-items: center;
-    display: flex;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.define-tag-1{
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    flex-basis: 100%;
-    align-items: flex-start;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.define-tag-1 span{
-    color: white;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    box-sizing: border-box;
-    font-family: "family2";
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 0;
-    padding: 0;
-}
-.define-tag-2{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.define-tag-2 span{
+#hidee1{
     color: #a7a7a7;
     font-size: 0.875rem;
-    font-weight: 400;
+    font-weight: 700;
     box-sizing: border-box;
     margin-block-start: 0;
     margin-block-end: 0;
-    display: -webkit-box;
     margin-top: 1px;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    font-family: "family2";
+    font-family: family5;
+    margin-right: 30px;
 }
-.spotify-desk-footer{
-    padding-top: 40px;
-    width: 100%;
-    box-sizing: border-box;
-}
-.spotify-desk-footer-in{
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 72px;
-    width: 100%;
-    box-sizing: border-box;
-}
-.footer-part1{
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.footer-part1-in{
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    display: flex;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    text-align: start;
-    margin: 0;
-    padding: 0;
-}
-.footer-part1-in-first{
-    flex: 1 1 50%;
-    padding-bottom: 0px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.footer-divisions{
-   width: 20%;
-   margin-right: 24px;
-   margin-bottom: 32px;
-   box-sizing: border-box;
-   padding: 0;
-
-}
-.footer-divisions ul{
-    margin: 0;
-    padding: 0;
-    padding-inline-start: 0px;
-    box-sizing: border-box;
-    margin-block: 0px;
-    overflow-wrap: break-word;
-    text-align: start;
-}
-.footer-divisions ul p{
-    color: white;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    margin-block: 0px;
-    font-size: 1rem;
-    font-weight: 700;
-    font-family: "family1";
-}
-.footer-divisions ul span{
-    margin: 8px 0px;
-    width: fit-content;
-    display: block;
-    box-sizing: border-box;
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: "family2";
-    color: rgb(173, 171, 171);
-}
-.footer-part1-in-second{
-    margin-bottom: 40px;
-    box-sizing: border-box;
-    padding: 0;
-}
-.svg-icon{
-    padding: 0;
-    margin: 0;
-    display: inline;
-    padding-right: 12px;
-    box-sizing: border-box;
-}
-.svg-icon a{
-    display: inline-flex;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    -webkit-box-pack: center;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(41, 41, 41);
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-#finalhor{
-    margin: 0;
-    padding: 0;
-    margin-block-start: 0px;
-    box-sizing: border-box;
-    border: 0px;
-    border-block-start: 2px solid #292922;
-    margin-block-end: 22px;
-    opacity: 1;
-}
-.atlast{
-    display: flex;
-    flex-flow: column wrap;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
-    padding-top: 16px;
-    box-sizing: border-box;
-}
-.atlast-in{
-    margin: 0;
-    padding: 0;
-    flex: 0 0 auto;
-    display: flex;
-    flex-flow: row;
-    align-items: end;
-    color: rgb(173, 171, 171);
-    box-sizing: border-box;
-}
-.atlast-in-inner{
-    padding-right: 16px;
-}
-.atlast-in-inner p{
-    box-sizing: border-box;
-    margin-block: 0px;
+#hidee2{
+    color: #a7a7a7;
     font-size: 0.875rem;
-    font-weight: 400;
-    font-family: "family2";
-} */
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 1px;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-family: family5;
+    margin-right: 30px;
+}
+#hidee3{
+    color: #a7a7a7;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 1px;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-family: family5;
+    margin-right: 30px;
+}
+#hidee4{
+    color: #a7a7a7;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 1px;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-family: family5;
+    margin-right: 30px;
+}
+#hidee5{
+    color: #a7a7a7;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 1px;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-family: family5;
+    margin-right: 30px;
+}
+#hidee4{
+    color: #a7a7a7;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 1px;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-family: family5;
+    margin-right: 30px;
+}
+#hidee5{
+    color: #a7a7a7;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 1px;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-family: family5;
+    margin-right: 30px;
+}
+#hidee6{
+    color: #a7a7a7;
+    font-size: 0.875rem;
+    font-weight: 700;
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 1px;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-family: family5;
+    margin-right: 30px;
+}
 
 @media(max-width:369px){
     .spotifylogo2{
@@ -1730,6 +1500,10 @@ hr{
     #grid-new-elem a{
         display: none;
     }
+    #hidee6, #hidee5, #hidee4, #hidee3,
+    #hidee2,#hidee2,#hidee1{
+        display: none;
+    }
 }   
 @media (min-width: 1024px){
 
@@ -1812,7 +1586,7 @@ hr{
         content-visibility: auto;
         overflow-y: hidden;
         overflow-x: hidden;
-        gap: 3px;
+        gap: 0px;
     }
     #roundedpic{
         border-radius: 50%;
@@ -1836,8 +1610,10 @@ hr{
         gap: 8px;
         min-width: 160px;
         max-width: 213px;
+        min-height: 200px;
+        max-height: 267px;
     }
-    #grid-new-elem img{
+    .artists-elem img{
         min-inline-size: 152px;
         aspect-ratio: 1/1;
         object-fit: cover;
@@ -1847,7 +1623,67 @@ hr{
         border-radius: 4px;
         box-sizing: border-box;
         width: 100%;
-        height: auto;
+        height: 100%;
+    }
+    .albums-elem img{
+        min-inline-size: 152px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        inline-size: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+    }
+    .radio-elem img{
+        min-inline-size: 152px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        inline-size: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+    }
+    .charts-elem img{
+        min-inline-size: 152px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        inline-size: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+    }
+    .zzz-elem img{
+        min-inline-size: 152px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        inline-size: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+    }
+    .trending-elem img{
+        min-inline-size: 152px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        inline-size: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 4px;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
     }
     #grid-new-elem p{
         color: white;
@@ -1861,8 +1697,8 @@ hr{
         font-weight: 400;
         margin: 0;
         padding: 0;
+        height: 2rem;
     }
-
     #grid-new-elem a{
         color: #a7a7a7;
         font-size: 0.875rem;
@@ -1877,9 +1713,10 @@ hr{
         font-family: "family2";
         text-decoration: none;
         margin-top: 0px;
+        height: 2rem;
     }
     .endfooterpart1{
-        display: nonew;
+        display: none;
     }
     .footlist{
         display: flex;
@@ -1890,16 +1727,88 @@ hr{
     .footlistsecondpart{
         display: flex;
     }
+    .footfirstnsec{
+        display: flex;
+        flex-direction: row;
+    }
+    .company{
+        width: 10%;
+    }
+    .communities{
+        width: 10%;
+        margin-left: -130px;
+    }
+    .useful{
+        margin-left: 240px;
+        width: 10%;
+    }
+    .spotifyplans{
+        margin-top: 220px;
+        margin-left: -730px;
+        width: 10%;
+    }
 }
+@media (min-width: 1140px){
+    .footlist{
+        display: flex;
+        gap: 10%;
+        flex: 1;
+    }
+    .footlistfirstpart{
+        display: flex;
+        flex: 1;
+        margin: 0;
+        gap: 10%;
+    }
+    .footlistsecondpart{
+        display: flex;
+        flex: 1;
+        gap: 10%;
+        margin: 0;
+    }
+    .footfirstnsec{
+        display: flex;
+        flex: 1;
+        justify-content: unset;
+        gap: 5%;
+        
+    }
+    .company{
+        width: auto;
+        flex: 1;
+    }
+    .communities{
+        width: auto;
+        margin: 0;
+        flex: 1;
+    }
+    .useful{
+        margin: 0;
+        width: auto;
+        flex: 1;
+    }
+    .spotifyplans{
+        margin: 0;
+        width: auto;
+        flex: 1;
+    }
 
+    .mainbody{
+        max-width: 1955px;
+    }
+    .spotify-main-header{
+        max-width: 1955px;
+    }
+}
 @media (min-width:1172px){
     #cardheading1, #cardheading2, #cardheading3,
     #cardheading4, #cardheading5, #cardheading6{
         font-size: 1.5rem;
     }
 }
+
 @media (min-width:1404px){
-    .hidee4{
+    #hidee4{
         display: none;
     }
 }
@@ -1914,6 +1823,11 @@ hr{
         padding-right: 0px;
         padding-left: 0px;
         margin-left: 6px;
+    }
+}
+@media (min-width: 2124px){
+    #hidee6{
+        display: none;
     }
 }
 @media (min-width: 2140px){
